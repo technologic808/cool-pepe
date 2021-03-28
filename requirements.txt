@@ -18,7 +18,6 @@ MarkupSafe==1.1.1
 multidict==5.1.0
 pycodestyle==2.7.0
 python-dotenv==0.16.0
-replit==3.0.0
 requests==2.25.1
 toml==0.10.2
 typing-extensions==3.7.4.3

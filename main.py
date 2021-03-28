@@ -1,7 +1,6 @@
 import discord
 import os
 import random
-from replit import db
 import pepe_server
 import io
 import asyncio
