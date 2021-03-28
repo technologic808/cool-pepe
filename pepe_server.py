@@ -2,6 +2,7 @@ from flask import Flask
 from threading import Thread
 from waitress import serve
 from datetime import datetime, timezone, timedelta
+import os
 
 # Gets an instance of a WGSI application
 app = Flask('')
@@ -17,7 +18,8 @@ def home():
 
 # Serves the application using waitress
 def run():
-    serve(app, listen='*:8080')
+    port = int(os.environ.get("PORT", 5000))
+    serve(app, listen='*:' + port)
 
 
 # Keeps the application alive somehow
