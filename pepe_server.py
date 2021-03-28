@@ -19,7 +19,7 @@ def home():
 # Serves the application using waitress
 def run():
     port = int(os.environ.get("PORT", 5000))
-    serve(app, listen='*:' + port)
+    serve(app, listen='*:' + str(port))
 
 
 # Keeps the application alive somehow
